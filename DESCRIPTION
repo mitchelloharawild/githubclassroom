@@ -20,4 +20,6 @@ Imports:
     git2r,
     purrr,
     progressr,
-    stringr
+    stringr,
+    lifecycle
+RdMacros: lifecycle

@@ -1,3 +1,24 @@
+#' Clone assignment repositories from GitHub Classroom
+#'
+#' \lifecycle{maturing}
+#'
+#' @param path The directory to clone repositories into. Each repository will be
+#'   added in a subdirectory based on the student's GitHub username.
+#' @param assignment The assignment to clone (the prefix of the assignment
+#'   repository name on GitHub).
+#' @param organisation The GitHub Classroom organisation name.
+#'
+#' @examples
+#'
+#' \dontrun{
+#' clone_assignments(
+#'   "~/teaching/ETC5523/assignment_1",
+#'   assignment = "take-home-assignment",
+#'   organisation = "etc5523-2020"
+#'  )
+#' }
+#'
+#' @export
 clone_assignments <- function(path, assignment, organisation) {
   git_urls <- search_assignments(assignment, organisation)
   user <- stringr::str_match(git_urls, glue::glue("{assignment}-(.+)\\.git$"))[,2]
