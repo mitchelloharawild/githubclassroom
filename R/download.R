@@ -22,7 +22,7 @@
 clone_assignments <- function(path, assignment, organisation) {
   git_urls <- search_assignments(assignment, organisation)
   user <- stringr::str_match(git_urls, glue::glue("{assignment}-(.+)\\.git$"))[,2]
-  repo_path <- file.path(path, user)
+  repo_path <- normalizePath(file.path(path, user), mustWork = FALSE)
   p <- progressr::progressor(along = git_urls, label = "Cloning assignment repositories...")
   for(i in seq_along(git_urls)) {
     git2r::clone(git_urls[i], repo_path[i], progress = FALSE,
