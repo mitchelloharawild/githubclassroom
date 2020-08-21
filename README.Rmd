@@ -34,3 +34,25 @@ And the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("mitchelloharawild/githubclassroom")
 ```
+
+## Usage
+
+The main function from this package is `clone_assignments()`. It can be used to
+clone all of the assignment submissions for a given assignment and organisation
+to a particular path.
+
+```{r eval = FALSE}
+library(githubclassroom)
+clone_assignments("~/teaching/ETC5523/assignment_1", 
+                  assignment = "take-home-assignment",
+                  organisation = "etc5523-2020")
+```
+
+You can also report progress using `with_progress()` from the 
+[progressr](https://github.com/HenrikBengtsson/progressr) package:
+
+```{r, eval = FALSE}
+library(progressr)
+with_progress(clone_assignments(...))
+```
+
