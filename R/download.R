@@ -35,7 +35,7 @@ search_assignments <- function(assignment, organisation) {
   result <- gh::gh(
     endpoint = "/search/repositories",
     q = glue::glue("{assignment} in:name org:{organisation}"),
-    per_page = Inf)
+    .limit = Inf)
   cli::cli_alert_success("Found {result$total_count} {assignment} assignments from {organisation}.")
   if(result$incomplete_results) {
     cli::cli_alert_danger("Careful, the search results are incomplete!")
