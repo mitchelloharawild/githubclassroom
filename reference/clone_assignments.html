@@ -112,7 +112,7 @@
     <p><a href='https://www.tidyverse.org/lifecycle/#maturing'><img src='figures/lifecycle-maturing.svg' alt='Maturing lifecycle'></a></p>
     </div>
 
-    <pre class="usage"><span class='fu'>clone_assignments</span>(<span class='no'>path</span>, <span class='no'>assignment</span>, <span class='no'>organisation</span>)</pre>
+    <pre class="usage"><span class='fu'>clone_assignments</span><span class='op'>(</span><span class='va'>path</span>, <span class='va'>assignment</span>, <span class='va'>organisation</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -136,13 +136,15 @@ repository name on GitHub).</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'>clone_assignments</span>(
+<span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
+<span class='fu'>clone_assignments</span><span class='op'>(</span>
   <span class='st'>"~/teaching/ETC5523/assignment_1"</span>,
-  <span class='kw'>assignment</span> <span class='kw'>=</span> <span class='st'>"take-home-assignment"</span>,
-  <span class='kw'>organisation</span> <span class='kw'>=</span> <span class='st'>"etc5523-2020"</span>
- )
-}</div></pre>
+  assignment <span class='op'>=</span> <span class='st'>"take-home-assignment"</span>,
+  organisation <span class='op'>=</span> <span class='st'>"etc5523-2020"</span>
+ <span class='op'>)</span>
+<span class='op'>}</span>
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -158,7 +160,7 @@ repository name on GitHub).</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

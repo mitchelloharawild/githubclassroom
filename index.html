@@ -74,20 +74,23 @@
 <!-- install.packages("githubclassroom") -->
 <!-- ``` -->
 <p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("devtools")</span>
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"mitchelloharawild/githubclassroom"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mitchelloharawild/githubclassroom"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>The main function from this package is <code><a href="reference/clone_assignments.html">clone_assignments()</a></code>. It can be used to clone all of the assignment submissions for a given assignment and organisation to a particular path.</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">githubclassroom</span>)
-<span class="fu"><a href="reference/clone_assignments.html">clone_assignments</a></span>(<span class="st">"~/teaching/ETC5523/assignment_1"</span>,
-                  <span class="kw">assignment</span> <span class="kw">=</span> <span class="st">"take-home-assignment"</span>,
-                  <span class="kw">organisation</span> <span class="kw">=</span> <span class="st">"etc5523-2020"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">githubclassroom</span><span class="op">)</span>
+<span class="fu"><a href="reference/clone_assignments.html">clone_assignments</a></span><span class="op">(</span><span class="st">"~/teaching/ETC5523/assignment_1"</span>, 
+                  assignment <span class="op">=</span> <span class="st">"take-home-assignment"</span>,
+                  organisation <span class="op">=</span> <span class="st">"etc5523-2020"</span><span class="op">)</span></code></pre></div>
 <p>You can also report progress using <code><a href="https://rdrr.io/pkg/progressr/man/with_progress.html">with_progress()</a></code> from the <a href="https://github.com/HenrikBengtsson/progressr">progressr</a> package:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">progressr</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/progressr/man/with_progress.html">with_progress</a></span>(<span class="fu"><a href="reference/clone_assignments.html">clone_assignments</a></span>(<span class="no">...</span>))</pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/HenrikBengtsson/progressr">progressr</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/progressr/man/with_progress.html">with_progress</a></span><span class="op">(</span><span class="fu"><a href="reference/clone_assignments.html">clone_assignments</a></span><span class="op">(</span><span class="va">...</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -117,7 +120,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
