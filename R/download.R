@@ -25,6 +25,7 @@ clone_assignments <- function(path, assignment, organisation) {
   repo_path <- normalizePath(file.path(path, user), mustWork = FALSE)
   p <- progressr::progressor(along = git_urls, label = "Cloning assignment repositories...")
   for(i in seq_along(git_urls)) {
+    dir.create(repo_path[i], recursive = TRUE)
     git2r::clone(git_urls[i], repo_path[i], progress = FALSE,
                  credentials = git2r::cred_token())
     p(user[i])
