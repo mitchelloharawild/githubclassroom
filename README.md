@@ -5,18 +5,20 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
 <!-- badges: end -->
 
 Minimal R package for downloading and managing GitHub Classrooms from R.
+If I had known of the [`{ghclass}`](https://github.com/rundel/ghclass/)
+package, I wouldn’t have put together this one. I strongly recommend
+checking out and using the `{ghclass}` package instead!
 
 ## Installation
 
 <!-- You can install the released version of githubclassroom from [CRAN](https://CRAN.R-project.org) with: -->
-
 <!-- ``` r -->
-
 <!-- install.packages("githubclassroom") -->
-
 <!-- ``` -->
 
 And the development version from [GitHub](https://github.com/) with:
